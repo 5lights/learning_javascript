@@ -4,21 +4,49 @@
     </head>
     <body>
         <script>
-            var name1 = "Nathan";
-            var name2 = "Nathan";
-            var equalsName = name1 !== name2;            
+            //Logical Operators
+            //AND Operator &&
+            //true && true === true
+            //true && false === false
+            //false && false ===false
+            
 
-            console.log(equalsName);
+            //OR Operator ||
+            //true || true === true
+            //true || false === true
+            //false ||false === false
 
-            if (1 - 2 === 3){
-                console.log("I ran.");
+            //> Greater Tahn
+            //< Less Than
+            //>== Greater Than or Equals To
+            //<== Less Than or Equals To
+            
+            //Dance Party
+            //The dance party is successful if the number
+            //of dancers is between 40 and 60
+            //Unless it is the weekend, then there is no upper boundary 
+            //for the number of dancers for the party
+            //to be successful
+            var numDancers = 70;
+            var isWeekend = false;
+            var isSuccess = false;
+
+            if(isWeekend === true && numDancers >= 40){
+                isSuccess = true;                
             }
-            else if (equalsName){
-                console.log("Else I ran.");
+            else if (isWeekend === false && numDancers >= 40 && numDancers <=60){
+                isSuccess = true;
+            }
+
+            if (!isSuccess){
+                console.log("Lame Party");
             }
             else {
-                console.log("If all else fails.");
+                console.log("Awesome Party");
             }
+            
+                
+            console.log(isSuccess);
 
         </script>
     </body>

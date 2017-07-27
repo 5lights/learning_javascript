@@ -4,49 +4,21 @@
     </head>
     <body>
         <script>
-            //Logical Operators
-            //AND Operator &&
-            //true && true === true
-            //true && false === false
-            //false && false ===false
-            
+            // var counter = 2;
+            // while (counter <= 10){
+            //     console.log("var counter is equals to " + counter);
+            //     counter++;
+            // }
+            // console.log("Out the Loop!");
+            counter = 0;
+            myString = "";
+            while (counter < 3){
+                //console.log(myString);
+                myString += "Na";
+                counter++;
 
-            //OR Operator ||
-            //true || true === true
-            //true || false === true
-            //false ||false === false
-
-            //> Greater Tahn
-            //< Less Than
-            //>== Greater Than or Equals To
-            //<== Less Than or Equals To
-            
-            //Dance Party
-            //The dance party is successful if the number
-            //of dancers is between 40 and 60
-            //Unless it is the weekend, then there is no upper boundary 
-            //for the number of dancers for the party
-            //to be successful
-            var numDancers = 70;
-            var isWeekend = false;
-            var isSuccess = false;
-
-            if(isWeekend === true && numDancers >= 40){
-                isSuccess = true;                
             }
-            else if (isWeekend === false && numDancers >= 40 && numDancers <=60){
-                isSuccess = true;
-            }
-
-            if (isSuccess){
-                console.log("Awesome Party");
-            }
-            else {
-                console.log("Lame Party");
-            }
-            
-                
-            console.log(isSuccess);
+            console.log(myString);
 
         </script>
     </body>

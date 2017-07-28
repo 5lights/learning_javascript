@@ -4,24 +4,23 @@
     </head>
     <body>
         <script>
-            // Create a function called sortaSum
-            // Given 3 numbers, a and b, return their sum. However, if the sum is inthe range of 10...
-            // 19 inclusive, are forbidden, instead just return 20.
-            // sortaSum(3, 4) -> 7
+            // modulo operator
+            // pulls out the remainder 
+            // for example 10 % 5 would be 0    
+            // and 4%3 would be 1
 
-            function sortaSum (a, b){
-                var num = a+b;
-                if (num >= 10 && num <= 19){
-                    console.log(20);
-                }else{
-                    console.log(num);
+            function old35 (sum){
+                if (sum%5 === 0 && sum%3 === 0){
+                    console.log(false);
+                } else if (sum%5 === 0 || sum%3 === 0){
+                    
+                    console.log(true);
+                }else {
+                    console.log(false);
                 }
-
-            
             
             }
-            sortaSum(1, 2); 
-            sortaSum(3, 4);
+            old35(5);
         </script>
     </body>
 </html>

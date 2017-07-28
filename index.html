@@ -4,42 +4,24 @@
     </head>
     <body>
         <script>
-            // var dog = 10;
+            // Create a function called sortaSum
+            // Given 3 numbers, a and b, return their sum. However, if the sum is inthe range of 10...
+            // 19 inclusive, are forbidden, instead just return 20.
+            // sortaSum(3, 4) -> 7
+
+            function sortaSum (a, b){
+                var num = a+b;
+                if (num >= 10 && num <= 19){
+                    console.log(20);
+                }else{
+                    console.log(num);
+                }
+
             
-            // makeNoise(dog);
-            // makeNoise(dog);
-            // makeNoise(10);
-            // makeNoise(60);
-            // makeNoise("Rover", 20);
-            // makeNoise("Russell", 30);
-            // makeNoise("Pluto", 40, "Great Pyrenese");
-
-
-            // function makeNoise (name, weight, breed){
-            //     if (weight > 20){
-            //     console.log(name + breed + " WOOF WOOF");
-
-            //     }else {
-            //     console.log( name + breed + " woof woof");
-            //     }
-
-            // }
             
-            // function sum (num1, num2){
-            //     return num1 + num2;
-            // }
-
-            // var mySum = sum(1, 2);
-            // console.log(mySum);
-            // console.log(sum(2, 100));
-
-            function circleArea (radius){
-                var area = Math.PI * (radius * radius);
-                console.log(area);
             }
-            
-            circleArea(5);
-    
+            sortaSum(1, 2); 
+            sortaSum(3, 4);
         </script>
     </body>
 </html>

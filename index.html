@@ -4,20 +4,15 @@
     </head>
     <body>
         <script>
-            function lastDigit (int1, int2){
-                if (int1 % 10 === int2 % 10){
-                return true;
-                }
-                else{
-                    return false;
-                }                
+            function getArea (sideLength){
+                var square = sideLength * sideLength;
+                return square;
+
             }
+            var square1Area = getArea (2);  
+            console.log(square1Area);
 
-            console.log(lastDigit(23, 13));
-            console.log(lastDigit(23, 3));
-            console.log(lastDigit(23, 19));
-
-
+            getArea(4);
 
 
         </script>

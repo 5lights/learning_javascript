@@ -4,17 +4,29 @@
     </head>
     <body>
         <script>
-            function getArea (sideLength){
-                var square = sideLength * sideLength;
-                return square;
+            var colors = ["Red", "White", "Blue", "Pink"];
+            console.log(colors[2]);
+            console.log(colors);
+            console.log(colors.length);
+
+
+            var index = 0;
+            while (index < colors.length){
+                console.log(index);
+                console.log(colors[index]);
+                index++;
+            }
+            for (var index = 0; index < colors.length; index++){
+                console.log(index);
+                console.log(colors[index]);
+            }
+
+            var numBers = [1, 2, 3, 4, 5];
+            for (var i = 0; i < numBers.length; i++){
+
+                console.log(numBers[i]);
 
             }
-            var square1Area = getArea (2);  
-            console.log(square1Area);
-
-            getArea(4);
-
-
         </script>
     </body>
 </html>

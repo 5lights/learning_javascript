@@ -4,29 +4,63 @@
     </head>
     <body>
         <script>
-            var colors = ["Red", "White", "Blue", "Pink"];
-            console.log(colors[2]);
-            console.log(colors);
-            console.log(colors.length);
+            // var colors = ["Red", "White", "Blue", "Pink"];
+            // console.log(colors[2]);
+            // console.log(colors);
+            // console.log(colors.length);
 
 
-            var index = 0;
-            while (index < colors.length){
-                console.log(index);
-                console.log(colors[index]);
-                index++;
+            // var index = 0;
+            // while (index < colors.length){
+            //     console.log(index);
+            //     console.log(colors[index]);
+            //     index++;
+            // }
+            // for (var index = 0; index < colors.length; index++){
+            //     console.log(index);
+            //     console.log(colors[index]);
+            // }
+
+            // var numBers = [1, 2, 3, 4, 5];
+            // for (var i = 0; i < numBers.length; i++){
+            //     numBers [i];
+            //     console.log(numBers[i]);
+
+            // }
+
+            myColors = [15, 14, 19, 17]
+
+            //array.push() adds an element to the end of the array
+            //array.pop() removes last element of array
+            //array.shift() removes first element and shifts the elements down by one
+            //array.unshift() adds an element to the beginning of the array
+            //array[] = "" is used to change the elements
+            
+
+
+
+            // function firstLastEven (myArray){
+            //     if (myArray[0]%2 === 0 && myArray[myArray.length-1]%2 ===0){
+            //         return true;
+
+            //     }else {
+            //         return false;
+            //     }
+
+            // }
+            function firstLastEven (myArray){
+                var aNum1 = myArray [0];
+                var aNumLast    = myArray [myArray.length - 1];
+                if (aNum1 % 2 === 0 && aNumLast % 2 === 0){
+                    return true;
+                }else{
+                    return false;
+                }
             }
-            for (var index = 0; index < colors.length; index++){
-                console.log(index);
-                console.log(colors[index]);
-            }
 
-            var numBers = [1, 2, 3, 4, 5];
-            for (var i = 0; i < numBers.length; i++){
-
-                console.log(numBers[i]);
-
-            }
+            // console.log (firstLastEven ([3, 2, 1]));
+            // console.log (firstLastEven ([4, 5, 3, 8]));
+            // console.log (firstLastEven([2]));
         </script>
     </body>
 </html>

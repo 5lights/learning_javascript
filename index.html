@@ -35,10 +35,28 @@
             //array.shift() removes first element and shifts the elements down by one
             //array.unshift() adds an element to the beginning of the array
             //array[] = "" is used to change the elements
-            
+            //array.splice() removes elements anywhere, it takes two parameters, where to start deleting and how many to delete
+            //array.splice(1, 2, "_____", "_____") removes and adds elements.
 
 
+            function addMiddle (myArray, midNum){
+                var middle = myArray.splice(Math.floor(myArray.length / 2), 0, midNum);
+                return myArray;
+            }
+            console.log(addMiddle([1, 2, 3, 4], 7) );
+            // function endsSwap (myArray){
+            //     var firstNum = myArray[0];
+            //     var lastNum = myArray[myArray.length -1];
+            //     myArray [0] = lastNum;
+            //     myArray[myArray.length -1] = firstNum; 
 
+            //     return myArray
+
+            // }
+
+            // console.log(endsSwap([3, 2, 1]));
+            // console.log(endsSwap([1, 2, 3, 4, 5]));
+            // console.log(endsSwap([22, 34, 35, 56]));
             // function firstLastEven (myArray){
             //     if (myArray[0]%2 === 0 && myArray[myArray.length-1]%2 ===0){
             //         return true;
@@ -48,15 +66,17 @@
             //     }
 
             // }
-            function firstLastEven (myArray){
-                var aNum1 = myArray [0];
-                var aNumLast    = myArray [myArray.length - 1];
-                if (aNum1 % 2 === 0 && aNumLast % 2 === 0){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
+            // function firstLastEven (myArray){
+            //     var aNum1 = myArray [0];
+            //     var aNumLast    = myArray [myArray.length - 1];
+            //     if (aNum1 % 2 === 0 && aNumLast % 2 === 0){
+            //         return true;
+            //     }else{
+            //         return false;
+            //     }
+            // }
+
+            
 
             // console.log (firstLastEven ([3, 2, 1]));
             // console.log (firstLastEven ([4, 5, 3, 8]));
@@ -64,3 +84,4 @@
         </script>
     </body>
 </html>
+

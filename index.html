@@ -4,14 +4,14 @@
     </head>
     <body>
         <script>
-            function makeAbba (string1, string2){
-                //var why = string2.concat(string2);
-                var stringWhy = string2 + string2
-                return string1.concat(stringWhy, string1);
-
+            function firstHalf(string){
+                var myString = Math.ceil(string.length/2);
+                var theString = string.slice(0, myString);
+                return theString;
             }
 
-            console.log(makeAbba("why", "because"));
+            console.log(firstHalf("Hello"));
+            console.log(firstHalf("because"));
         </script>
     </body>
 </html>

@@ -4,18 +4,14 @@
     </head>
     <body>
         <script>
-            function endsWithOther (a, b){
-                var first = a.toLowerCase();
-                var second = b.toLowerCase();
+            function makeAbba (string1, string2){
+                //var why = string2.concat(string2);
+                var stringWhy = string2 + string2
+                return string1.concat(stringWhy, string1);
 
-                if (first.endsWith(second)|| second.endsWith(first)){
-                    return true;
-                }
-                else {
-                    return false;
-                }
             }
-            console.log(endsWithOther("yyy", "HelloYyy"));
+
+            console.log(makeAbba("why", "because"));
         </script>
     </body>
 </html>

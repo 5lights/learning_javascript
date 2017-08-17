@@ -2,17 +2,50 @@
     <head>
         <title>My First JavaScript</title>
     </head>
-    <body>
+    <body onload="onLoad()">
         <script>
-            function firstHalf(string){
-                var myString = Math.ceil(string.length/2);
-                var theString = string.slice(0, myString);
-                return theString;
-            }
+            function alertGreeting(){
+                var textBoxx = document.getElementById('textboxx').value;
+                
+                console.log(textBoxx);
 
-            console.log(firstHalf("Hello"));
-            console.log(firstHalf("because"));
+                
+            }     
+            function onLoad (){
+                document.getElementById('mydiv').innerHTML = "<h1>My Header</h1>";
+            }  
+
         </script>
+        <div id="mydiv">
+        </div>
+        
+        <form>
+            <input type="text" id="textboxx" style="font-family:Time New Roman"/>
+            
+            <input id="my box" type="button" value="okay" onclick="alertGreeting();"/>
+
+        </form>
+        <table>
+            <tr>
+                <th>
+                Year
+                </th>
+                <th>
+                Amount
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    2000
+                </td>
+            </tr>
+            <tbody>
+            <tr>
+                <td>2016</td>
+                <td>200</td>
+            </tr>
+        </table>
+        
     </body>
 </html>
 

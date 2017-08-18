@@ -3,47 +3,64 @@
         <title>My First JavaScript</title>
     </head>
     <body>
-        <script>
-           var myObject = {
-               color: "green",
-               doors: 4,
-               brand: "Chevorlet",
-               passengers: 7,
-               started: false,
-               start: function(){
-                   this.started = true;
+        <script>//    var myObject = {
+        //        color: "green",
+        //        doors: 4,
+        //        brand: "Chevorlet",
+        //        passengers: 7,
+        //        started: false,
+        //        start: function(){
+        //            this.started = true;
 
-               },
-               stop: function(){
-                   this.started = false;
-               },
+        //        },
+            //    stop: function(){
+            //        this.started = false;
+            //    },
                
-               drive: function(){
-                   if (this.started === true){
-                       return "vrroom";
-                   }else{
-                       return "you must start the car";
-                   }
+            //    drive: function(){
+            //        if (this.started === true){
+            //            return "vrroom";
+            //        }else{
+            //            return "you must start the car";
+            //        }
                 
 
-               }
+            //    }
 
-           }
+        //    }
 
-         console.log(myObject.started);
+        var dad = {
+            age:30,
+            kiddos: [
+                {kid: 1},
+                {kid: 5},
+                {kid:16},
+            ],
+            celebrateBirthday: function(){
+                this.age++;
+            }
+        }   
+            
+        console.log(dad.celebrateBirthday());
+        console.log(dad.age);
+        // var family
+        //  console.log(myObject.started);
 
 
+        // function changeColor(car, color){
+        //     myObject.color = color;
+        // }
         
-         
-         myObject.stop();
-           console.log(myObject.started);
-         console.log(myObject.drive());  
+        //  myObject.stop();
+        //    console.log(myObject.started);
+        //  console.log(myObject.drive());  
            
             
 
+</script>
+       
 
-        </script>
-        
+
     </body>
 </html>
 

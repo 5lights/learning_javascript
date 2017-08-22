@@ -4,30 +4,42 @@
     </head>
     <body>
         <script>
+            //prototype function
+            //creates a type
+            //creating a blueprint
+            function Person(name, age) {
+                this.name = name;
+                this.age = age;
+                // this.children = [""];
+                this.children = [];
+            }
+
+            Person.prototype.celebrateBirthday = function () {
+                this.age++; 
+            }   
+
+            Person.prototype.kiddos = function (child) {
+                this.children.push(child);
+            }
+
+            //calling the blueprint
+            //different houses out of the same blueprint
+            var joe = new Person("Joe", 30, "jimmy");
+            var nathan = new Person("nathan", 5);
+            // var bob = new Person("Bob", 40, "mike");
+            joe.kiddos(nathan);
+            joe.kiddos(new Person("Jimmy", 3));
             
-            // function sum(a, b){
-            //     console.log(a+b);
-            // }
+            console.log(joe.children[0].name);
 
-            //anonymous function
-            //anonymous functions must be called after it is created
-            //you cannot call an anonymous function before it
-
-            var sum = function (a, b) {
-                console.log(a + b);
-            }
-
-            var product = function(a) {
-                console.log(a*a);
-            }
-
-            function doSomething(a, c) {
-                c(a);
-            }
-
-
-            doSomething(1, product)
-
+            // console.log(joe.children);
+            // console.log(bob.children);
+            // console.log(joe.age);
+            // console.log(bob.age);         
+            // joe.celebrateBirthday();
+            // bob.celebrateBirthday();
+            // console.log(joe.age);
+            // console.log(bob.age);
             
         </script>
        

@@ -30,15 +30,18 @@
         //    }
 
         var dad = {
+            name: "nick",
             age:30,
             kiddos: [
-                {kid: 1},
-                {kid: 5},
-                {kid:16},
+                {name: "Mike", age: 2},
+                {name: "Candy", age: 13},
+                {name: "Nathan", age: 17},
             ],
             celebrateBirthday: function(){
                 this.age++;
+                return "Dad's name is" + " " + this.name + " and he is " + this.age;
             }
+
         }   
             
         console.log(dad.celebrateBirthday());
@@ -50,14 +53,14 @@
         // function changeColor(car, color){
         //     myObject.color = color;
         // }
-        
+    
         //  myObject.stop();
         //    console.log(myObject.started);
         //  console.log(myObject.drive());  
            
             
 
-</script>
+    </script>
        
 
 

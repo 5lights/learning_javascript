@@ -4,48 +4,22 @@
     </head>
     <body>
         <script>
-            
-            function MyCar(year, brand, name) {
-                this.year = year;
-                this.brand = brand;
-                this.name = name;
-                started = false;
-                
-            }
-
-
-            MyCar.prototype.start = function () {
-                this.started = true;
-                
-            }
-
-            MyCar.prototype.stop = function () {
-                this.started = false;
-               
-            }
-
-            MyCar.prototype.drive = function () {
-                if (this.started = true) {
-                    return "Vrroommm!";
-
-                }else{ 
-                    return "You need to start your car!";
+            function lessBy10(a, b, c){
+                // if (a <= a-10 || a <= b-10 || a <=c-10)
+                if (a <= b-10||a <= c-10){
+                    return true;
+                }else if (b <= a-10 || b <= c-10){
+                    return true;
+                }else if (c <= a-10 || c <= b-10){
+                    return true;
+                }else{
+                return false;
                 }
             }
 
-
-            var myChevy = new MyCar(1990, "Chevorlet", "Rainbow");
-        
-            myChevy.start();
-          
-            console.log(myChevy.brand);
-            console.log(myChevy.drive);
-
-            myChevy.stop();
-            console.log(myChevy.drive);
-
-           
-           
+            console.log(lessBy10(1, 7, 11));
+            console.log(lessBy10(1, 7, 10));
+            console.log(lessBy10(11, 1, 7));
         </script>
        
 

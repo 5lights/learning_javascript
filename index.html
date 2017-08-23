@@ -4,43 +4,48 @@
     </head>
     <body>
         <script>
-            //prototype function
-            //creates a type
-            //creating a blueprint
-            function Person(name, age) {
+            
+            function MyCar(year, brand, name) {
+                this.year = year;
+                this.brand = brand;
                 this.name = name;
-                this.age = age;
-                // this.children = [""];
-                this.children = [];
+                started = false;
+                
             }
 
-            Person.prototype.celebrateBirthday = function () {
-                this.age++; 
-            }   
 
-            Person.prototype.kiddos = function (child) {
-                this.children.push(child);
+            MyCar.prototype.start = function () {
+                this.started = true;
+                
             }
 
-            //calling the blueprint
-            //different houses out of the same blueprint
-            var joe = new Person("Joe", 30, "jimmy");
-            var nathan = new Person("nathan", 5);
-            // var bob = new Person("Bob", 40, "mike");
-            joe.kiddos(nathan);
-            joe.kiddos(new Person("Jimmy", 3));
-            
-            console.log(joe.children[0].name);
+            MyCar.prototype.stop = function () {
+                this.started = false;
+               
+            }
 
-            // console.log(joe.children);
-            // console.log(bob.children);
-            // console.log(joe.age);
-            // console.log(bob.age);         
-            // joe.celebrateBirthday();
-            // bob.celebrateBirthday();
-            // console.log(joe.age);
-            // console.log(bob.age);
-            
+            MyCar.prototype.drive = function () {
+                if (this.started = true) {
+                    return "Vrroommm!";
+
+                }else{ 
+                    return "You need to start your car!";
+                }
+            }
+
+
+            var myChevy = new MyCar(1990, "Chevorlet", "Rainbow");
+        
+            myChevy.start();
+          
+            console.log(myChevy.brand);
+            console.log(myChevy.drive);
+
+            myChevy.stop();
+            console.log(myChevy.drive);
+
+           
+           
         </script>
        
 

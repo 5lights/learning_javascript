@@ -4,27 +4,22 @@
     </head>
     <body>
         <script>
-            function lessBy10(a, b, c){
-                // if (a <= a-10 || a <= b-10 || a <=c-10)
-                if (a <= b-10||a <= c-10){
+            function nearTen(num) {
+                if (num%10 <= 2||num%10 >= 8){
                     return true;
-                }else if (b <= a-10 || b <= c-10){
-                    return true;
-                }else if (c <= a-10 || c <= b-10){
-                    return true;
-                }else{
-                return false;
                 }
+                return false;
             }
-
-            console.log(lessBy10(1, 7, 11));
-            console.log(lessBy10(1, 7, 10));
-            console.log(lessBy10(11, 1, 7));
+            
+            console.log(nearTen(12));
+            console.log(nearTen(19));
+            console.log(nearTen(19));
         </script>
        
 
 
     </body>
 </html>
+
 
 

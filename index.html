@@ -4,16 +4,24 @@
     </head>
     <body>
         <script>
-            function nearTen(num) {
-                if (num%10 <= 2||num%10 >= 8){
-                    return true;
+            function repeatString (a, num) {
+                var i = 0;
+                var myNum = "";
+                while (i < a) {
+                    myNum += num;
+                    i++; 
                 }
-                return false;
+                return myNum;
+                
             }
-            
-            console.log(nearTen(12));
-            console.log(nearTen(19));
-            console.log(nearTen(19));
+
+
+            console.log(repeatString(1, "hello"));
+
+            console.log(repeatString(2, "hello"));
+
+            console.log(repeatString(3, "hello"));
+
         </script>
        
 

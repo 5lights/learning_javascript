@@ -4,23 +4,25 @@
     </head>
     <body>
         <script>
-            function repeatString (a, num) {
-                var i = 0;
-                var myNum = "";
-                while (i < a) {
-                    myNum += num;
-                    i++; 
+            function generateRange (min, max, step) {
+                // var myArray = [min];
+                // while (min < max) {
+                //     min += step;
+                //     myArray += min;
+                // }
+                // myArray += max;
+
+                // return myArray
+                var myArray = [];
+                for (var i = min; i<max; i = i + step){
+                    myArray.push(i)
                 }
-                return myNum;
-                
+                return myArray;
             }
 
+            console.log(generateRange(2, 10, 2));
 
-            console.log(repeatString(1, "hello"));
-
-            console.log(repeatString(2, "hello"));
-
-            console.log(repeatString(3, "hello"));
+      
 
         </script>
        
